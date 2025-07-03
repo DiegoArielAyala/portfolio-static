@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bikechain</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark1 text-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark1" id="navbar">
+    <div class="container">
+      <a class="navbar-brand text-title button-home button-back" href="/#section-proyectos">
+        ← Volver
+      </a>
+    </div>
+  </nav>
+
+  <!-- Contenido -->
+  <section class="py-5 section-proyecto">
+    <div class="container pt-1">
+      
+      <!-- Título -->
+      <h1 class="text-center mb-1 text-title">Bikechain</h1>
+      
+      <!-- Galería de imágenes -->
+      <div id="carouselProjectImages" class="carousel slide mb-2" data-bs-interval="false">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="{% static 'img/bikechain/bikechain.webp' %}" class="d-block w-100" alt="Imagen Bike Price Tracker">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/bikechain/my-activities.webp' %}" class="d-block w-100" alt="Imagen Busqueda">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/bikechain/nft-view.webp' %}" class="d-block w-100" alt="Imagen Grafico precio">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectImages" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectImages" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselProjectImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselProjectImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselProjectImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselProjectImages" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+      </div>
+      
+      <div class="row div-proyecto-detalle">
+        <div class="col-lg-8 mx-auto">
+          <h3 class="text-accent mt-3">Descripción del proyecto</h3>
+
+          <p class="fs-5">
+            <strong class="resaltado">Bikechain</strong> es una aplicación web creada para aplicar y consolidar mis conocimientos en desarrollo blockchain, permitiendo registrar entrenamientos de ciclismo directamente en la 
+            <strong class="resaltado">red de Ethereum</strong>. Con el primer registro, el usuario recibe un <strong class="resaltado">NFT único bajo el estándar ERC-721</strong>.
+          </p>
+
+          <p class="fs-5">
+            El proyecto incluye <strong class="resaltado">smart contracts en Solidity</strong>, una interfaz en <strong class="resaltado">React</strong> y la integración con <strong class="resaltado">Metamask</strong> a través de <strong class="resaltado">Ethers.js</strong> para facilitar la gestión segura de transacciones. Se han implementado <strong class="resaltado">test unitarios</strong> para verificar el correcto funcionamiento de la web.
+          </p>
+
+          <h3 class="mt-5">Características destacadas</h3>
+          <ul class="fs-5">
+            <li><strong class="resaltado">Smart contracts desarrollados en Solidity</strong> para la gestión de entrenamientos y creación de NFTs bajo el estándar ERC-721</li>
+            <li><strong class="resaltado">Integración con Metamask</strong> mediante Ethers.js para una experiencia segura y fluida</li>
+            <li><strong class="resaltado">Interfaz responsiva creada en React</strong>, con enfoque en usabilidad y diseño moderno</li>
+            <li>Visualización de <strong class="resaltado">métricas</strong> como distancia, tiempo y velocidad promedio</li>
+          </ul>
+
+
+          <h3 class="mt-5">Tecnologías utilizadas</h3>
+          <div class="div-tecnologias-detalle mt-2">
+            <div class="div-tecnologia-detalle"><svg class="img-tecnologia-detalle" id="img-html" role="img" viewBox="0 0 24 24"><use href="../static/icons/icons.svg#logo-html"></use></svg><span>HTML</span></div>
+            <div class="div-tecnologia-detalle"><svg class="img-tecnologia-detalle" id="img-css" role="img" viewBox="0 0 24 24"><use href="../static/icons/icons.svg#logo-css"></use></svg><span>CSS</span></div>
+            <div class="div-tecnologia-detalle"><svg class="img-tecnologia-detalle" id="img-solidity-claro" role="img" viewBox="0 0 24 24"><use href="../static/icons/icons.svg#logo-solidity"></use></svg><span>Solidity</span></div>
+            <div class="div-tecnologia-detalle"><svg class="img-tecnologia-detalle" id="img-ethersjs" role="img" viewBox="0 0 24 24"><use href="../static/icons/icons.svg#logo-ethersjs"></use></svg><span>Ethers.js</span></div>
+            <div class="div-tecnologia-detalle"><svg class="img-tecnologia-detalle" id="img-python" role="img" viewBox="0 0 24 24"><use href="../static/icons/icons.svg#logo-python"></use></svg><span>Python</span></div>
+            <div class="div-tecnologia-detalle"><svg class="img-tecnologia-detalle" id="img-pytest" role="img" viewBox="0 0 24 24"><use href="../static/icons/icons.svg#logo-pytest"></use></svg><span>Pytest</span></div>
+            <div class="div-tecnologia-detalle"><svg class="img-tecnologia-detalle" id="img-javascript" role="img" viewBox="0 0 24 24"><use href="../static/icons/icons.svg#logo-javascript"></use></svg><span>JavaScript</span></div>
+            <div class="div-tecnologia-detalle"><svg class="img-tecnologia-detalle" id="img-nodejs" role="img" viewBox="0 0 24 24"><use href="../static/icons/icons.svg#logo-nodejs"></use></svg><span>NodeJs</span></div>
+            <div class="div-tecnologia-detalle"><svg class="img-tecnologia-detalle" id="img-react" role="img" viewBox="0 0 24 24"><use href="../static/icons/icons.svg#logo-react"></use></svg><span>React</span></div>
+          </div>
+
+          <div class="div-botones-detalle mt-4">
+            <button class="button"><a href="" data-i18n="button_site" target="_blank">Ver sitio</a></button>
+            <button class="button"><a href="https://github.com/DiegoArielAyala/bikechain" target="_blank">GitHub</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
